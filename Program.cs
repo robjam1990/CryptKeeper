@@ -50,7 +50,7 @@ namespace CryptKeeper
             Write("intention of encrypting and decrypting files.\n\n");
         }
 
-        public static void Main(string[,] args)
+        public static void Main()
         {
             WriteLine($"Welcome to the \n\n");
             Write($"\tCryptKeeper!");
