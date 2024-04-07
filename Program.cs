@@ -4,7 +4,7 @@ using System.IO;
 
 namespace CryptKeeper
 {
-    class Program
+    public class Program
     {
         protected bool Esc { get; set; } = false;
         protected bool IsEncrypted { get; set; }
@@ -45,11 +45,16 @@ namespace CryptKeeper
 
         internal static void About()
         {
-            throw new NotImplementedException();
+            WriteLine("The CryptKeeper is a simple program which was created by ");
+            Write($"Robert James Newell-Landry of robjam1990.\nIt was created with the ");
+            Write("intention of encrypting and decrypting files.\n\n");
         }
 
-        static void Main(string[,] args)
+        public static void Main(string[,] args)
         {
+            WriteLine($"Welcome to the \n\n");
+            Write($"\tCryptKeeper!");
+            ReadKey(true);
             Clear();
             ResetColor();
             ForegroundColor = ConsoleColor.Yellow;
